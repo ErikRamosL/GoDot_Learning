@@ -11,7 +11,7 @@
 
 [node name="LevelTemplate" type="Node2D"]
 __meta__ = {
-"_edit_vertical_guides_": [ 5325.0 ]
+"_edit_vertical_guides_": [ 5388.0 ]
 }
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
@@ -25,9 +25,6 @@ layer = -100
 [node name="TextureRect" type="TextureRect" parent="BackgroundLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 1920.0
-margin_bottom = 1080.0
-rect_scale = Vector2( 0.54, 0.57 )
 texture = ExtResource( 4 )
 
 [node name="TileMap" type="TileMap" parent="."]

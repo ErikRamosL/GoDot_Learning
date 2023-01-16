@@ -3,7 +3,7 @@ extends Control
 
 onready var scene_tree: = get_tree()
 onready var pause_overlay: ColorRect = $PauseOverlay
-onready var score : Label = $Label
+onready var score : Label = get_node("Label")
 onready var paused_title: Label = $PauseOverlay/Title
 
 
@@ -13,6 +13,9 @@ var paused: = false setget set_paused
 func _ready():
 	PlayerData.connect("score_updated", self, "User_Interface")
 	PlayerData.connect("player_died", self, "_on_PlayerData_player_died")
+#	update_interface()
+
+func _process(delta):
 	update_interface()
 
 

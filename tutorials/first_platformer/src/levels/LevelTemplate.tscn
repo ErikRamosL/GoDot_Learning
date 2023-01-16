@@ -38,6 +38,7 @@ position = Vector2( 354, 447 )
 speed = Vector2( 800, 1400 )
 
 [node name="Camera2D" parent="Player" index="2"]
+current = false
 limit_right = 2639
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
